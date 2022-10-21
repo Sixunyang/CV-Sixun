@@ -10,7 +10,7 @@ html {
 }
 body {
   font-size: 0.19rem;
-  background-color: rgb(82 89 90);
+  background-color: rgb(58 135 146);
 }
 
 .container {
@@ -143,7 +143,7 @@ hr {
 .skill li::after {
   background-image: linear-gradient(
     90deg,
-    rgb(94 114 117),
+    rgb(73 170 184),
     rgb(98, 196, 182),
     rgb(130 234 219)
   );
