@@ -10,14 +10,14 @@ html {
 }
 body {
   font-size: 0.19rem;
-  background-color: rgb(58 135 146);
+  background-color: white;
 }
 
 .container {
   padding: 0.4rem;
-  width: 80%;
+  width: 100%;
   /*  height: 11.5rem; */
-  margin: 0.6rem auto;
+  /*  margin: 0.6rem auto; */
   background-color: white;
 }
 /* START INFORMATION PART */
@@ -64,36 +64,6 @@ body {
 }
 /* END INFORMATION PART */
 
-/* Responsive layout when screen size is less than 800px */
-@media screen and (max-width: 885px) {
-  .info-top-left {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-  }
-  .info-top {
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-  html {
-    font-size: 20vw;
-  }
-  .container {
-    padding: 0.1rem;
-  }
-  .info-top-left .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .skill .big-ul {
-    flex-direction: column;
-  }
-  .container {
-    width: 90%;
-    margin: 0.2rem auto;
-  }
-}
 /* START SKILLS PART */
 .icon {
   width: 0.3rem;
@@ -178,7 +148,7 @@ hr {
   }
 
   100% {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -188,7 +158,7 @@ hr {
   }
 
   100% {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -223,7 +193,7 @@ hr {
 }
 /* END SKILLS PART */
 
-/* START EXPERIENCE PART */
+/* START PROJECTS PART */
 .experience > ul > li::before {
   content: "\2022";
   color: rgb(90, 142, 151);
@@ -254,11 +224,13 @@ a {
 a:hover {
   color: rgb(106, 210, 195);
 }
-/* END EXPERIENCE PART */
+/* END PROJECTS PART */
 
-/* START EDUCATION PART */
+/* START EXPERIENCE,EDUCATION PART */
 .education {
   margin-top: 0.3rem;
+
+  width: 47%;
 }
 .duration {
   font-style: italic;
@@ -266,4 +238,54 @@ a:hover {
   color: rgb(90, 142, 151);
   margin-bottom: 0.2rem;
 }
+.past {
+  display: flex;
+  justify-content: space-between;
+}
+.education .school {
+  margin-top: 40px;
+}
 /* END EDUCATION PART */
+
+/* Responsive layout when screen size is less than 800px */
+@media screen and (max-width: 885px) {
+  .info-top-left {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .info-top {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  html {
+    font-size: 20vw;
+  }
+  .container {
+    padding: 0.1rem;
+  }
+  .info-top-left .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill .big-ul {
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    margin: 0.2rem auto;
+  }
+  /* last 2 parts */
+  .education {
+    width: 100%;
+  }
+
+  .past {
+    width: 100%;
+    flex-direction: column;
+  }
+  .education .school {
+    margin-top: 40px;
+  }
+}
